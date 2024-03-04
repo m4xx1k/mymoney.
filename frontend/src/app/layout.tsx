@@ -1,4 +1,5 @@
 import { ThemeProvider } from '@/shared/lib/theme'
+import { cn } from '@/shared/utils'
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en' suppressHydrationWarning={true}>
-			<body className={font.className}>
+			<body className={cn(font.className, 'relative h-screen')}>
 				<ThemeProvider>{children}</ThemeProvider>
 			</body>
 		</html>
