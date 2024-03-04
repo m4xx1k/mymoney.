@@ -1,0 +1,5 @@
+export { colors } from '@/shared/lib/theme/colors'
+export { ThemeToggle } from '@/shared/lib/theme/theme-toggle'
+export { ThemeProvider } from '@/shared/lib/theme/theme.provider'
+export type { ThemeValue } from '@/shared/lib/theme/theme.types'
+export { useTheme } from '@/shared/lib/theme/use-theme'

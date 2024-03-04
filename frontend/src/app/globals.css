@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+[data-theme='dark'] {
+	@apply bg-dark text-light;
+}
+[data-theme='light'] {
+	@apply bg-light text-dark;
+}
